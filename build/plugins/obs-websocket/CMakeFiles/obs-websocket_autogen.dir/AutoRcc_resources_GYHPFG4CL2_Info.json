@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen",
+	"CMAKE_BINARY_DIR" : "D:/sourcecode/obs/obs-studio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/sourcecode/obs/obs-studio/plugins/obs-websocket",
+	"CMAKE_SOURCE_DIR" : "D:/sourcecode/obs/obs-studio",
+	"INCLUDE_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_Release",
+	"INPUTS" : 
+	[
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/images/help.svg",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/images/help_light.svg"
+	],
+	"LOCK_FILE" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Lock.lock",
+	"MULTI_CONFIG" : true,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "GYHPFG4CL2",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Used.txt",
+	"SETTINGS_FILE_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Used_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Used_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Used_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Used_Release.txt",
+	"SOURCE" : "D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/resources.qrc",
+	"VERBOSITY" : 0
+}

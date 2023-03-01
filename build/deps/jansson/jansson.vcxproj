@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67C53754-2447-3EEA-A4E8-B3262A7DB48E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>jansson</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jansson.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jansson_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jansson.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jansson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">jansson.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">jansson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">jansson.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">jansson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;JANSSON_USING_CMAKE;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\deps\jansson\include;D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include;D:\sourcecode\obs\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\deps\jansson\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/deps/jansson/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.cmake;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_ENDIAN_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SCHED_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT64_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT16_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT8_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_SHORT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UPPERCASE_SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT64.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT16.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT8.c;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfig.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfigVersion.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_private_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\jansson.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/deps/jansson/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.cmake;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_ENDIAN_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SCHED_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT64_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT16_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT8_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_SHORT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UPPERCASE_SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT64.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT16.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT8.c;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfig.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfigVersion.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_private_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\jansson.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/deps/jansson/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.cmake;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_ENDIAN_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SCHED_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT64_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT16_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT8_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_SHORT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UPPERCASE_SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT64.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT16.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT8.c;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfig.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfigVersion.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_private_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\jansson.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/deps/jansson/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckTypeSize.cmake;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_ENDIAN_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SCHED_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\INT64_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\LONG_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT16_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT32_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UINT8_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_LONG_INT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UNSIGNED_SHORT.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\UPPERCASE_SSIZE_T.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__INT64.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT16.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT32.c;D:\sourcecode\obs\obs-studio\build\CMakeFiles\CheckTypeSize\__UINT8.c;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfig.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\JanssonConfigVersion.cmake.in;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\cmake\jansson_private_config.h.cmake;D:\sourcecode\obs\obs-studio\deps\jansson\jansson.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\dump.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\error.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\hashtable.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\hashtable_seed.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\load.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\memory.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\pack_unpack.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\strbuffer.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\strconv.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\utf.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\value.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\hashtable.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\jansson_private.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\strbuffer.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\utf.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\deps\jansson\private_include\jansson_private_config.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\deps\jansson\include\jansson_config.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\jansson\src\jansson.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\ZERO_CHECK.proj">
+      <Project>{2AB59A9A-F0F2-313E-98F9-3A4BB116551A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

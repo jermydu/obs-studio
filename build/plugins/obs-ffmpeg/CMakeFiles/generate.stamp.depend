@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPkgConfig.cmake
+D:/sourcecode/obs/obs-studio/cmake/Modules/FindFFmpeg.cmake
+D:/sourcecode/obs/obs-studio/cmake/Modules/FindLibrist.cmake
+D:/sourcecode/obs/obs-studio/cmake/Modules/FindLibsrt.cmake
+D:/sourcecode/obs/obs-studio/cmake/bundle/windows/obs-module.rc.in
+D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/CMakeLists.txt
+D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/obs-ffmpeg-config.h.in

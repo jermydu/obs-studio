@@ -1,0 +1,46 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeConfigurableFile.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckFunctionExists.c
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckTypeSize.cmake
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_FCNTL_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_LOCALE_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_SCHED_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_STDINT_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PARAM_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STAT_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TIME_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TYPES_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckIncludeFiles/HAVE_UNISTD_H.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/INT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/INT32_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/INT64_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/LONG_INT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/LONG_LONG_INT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/SSIZE_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UINT16_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UINT32_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UINT8_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UNSIGNED_INT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UNSIGNED_LONG_INT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UNSIGNED_SHORT.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/UPPERCASE_SSIZE_T.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/__INT32.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/__INT64.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/__UINT16.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/__UINT32.c
+D:/sourcecode/obs/obs-studio/build/CMakeFiles/CheckTypeSize/__UINT8.c
+D:/sourcecode/obs/obs-studio/deps/jansson/CMakeLists.txt
+D:/sourcecode/obs/obs-studio/deps/jansson/cmake/CheckFunctionKeywords.cmake
+D:/sourcecode/obs/obs-studio/deps/jansson/cmake/JanssonConfig.cmake.in
+D:/sourcecode/obs/obs-studio/deps/jansson/cmake/JanssonConfigVersion.cmake.in
+D:/sourcecode/obs/obs-studio/deps/jansson/cmake/jansson_config.h.cmake
+D:/sourcecode/obs/obs-studio/deps/jansson/cmake/jansson_private_config.h.cmake
+D:/sourcecode/obs/obs-studio/deps/jansson/jansson.pc.in

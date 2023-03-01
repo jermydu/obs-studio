@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\obs-transitions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-slide.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-swipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-fade.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-cut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-fade-to-color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-luma-wipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\transition-stinger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\fade_to_color_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\fade_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\luma_wipe_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\slide_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\stinger_matte_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-transitions\data\swipe_transition.effect">
+      <Filter>Effect Files\data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-transitions\obs-transitions.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Effect Files">
+      <UniqueIdentifier>{487D5D2D-E198-3D94-8C8C-E79734D32ABC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect Files\data">
+      <UniqueIdentifier>{5BA13774-6903-3696-8359-A46D9642E7E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4CE8C72C-90FB-379A-AFC3-1E019274013F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

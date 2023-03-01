@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindCURL.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+D:/sourcecode/obs/obs-studio/deps/file-updater/CMakeLists.txt
+D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/cmake/CURL/CURLConfig.cmake
+D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/cmake/CURL/CURLConfigVersion.cmake
+D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/cmake/CURL/CURLTargets-release.cmake
+D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/cmake/CURL/CURLTargets.cmake

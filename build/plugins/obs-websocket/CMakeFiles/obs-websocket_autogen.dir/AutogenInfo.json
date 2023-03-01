@@ -1,0 +1,584 @@
+{
+	"BUILD_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen",
+	"CMAKE_BINARY_DIR" : "D:/sourcecode/obs/obs-studio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/sourcecode/obs/obs-studio/plugins/obs-websocket",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/CMakeLists.txt",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake",
+		"C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/plugin-macros.h.in",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/resources.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/sourcecode/obs/obs-studio",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/qr/cpp/QrCode.hpp",
+			"MU",
+			"T3HMOTF6YX/moc_QrCode.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/lib/obs-websocket-api.h",
+			"MU",
+			"ZJOKMXDKB7/moc_obs-websocket-api.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/Config.h",
+			"MU",
+			"UVLADIE3JM/moc_Config.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/WebSocketApi.h",
+			"MU",
+			"UVLADIE3JM/moc_WebSocketApi.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler.h",
+			"MU",
+			"ABPXKS25UQ/moc_EventHandler.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/types/EventSubscription.h",
+			"MU",
+			"V7PKFA3SSL/moc_EventSubscription.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/ConnectInfo.h",
+			"MU",
+			"GYHPFG4CL2/moc_ConnectInfo.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/SettingsDialog.h",
+			"MU",
+			"GYHPFG4CL2/moc_SettingsDialog.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/obs-websocket.h",
+			"MU",
+			"UVLADIE3JM/moc_obs-websocket.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestBatchHandler.h",
+			"MU",
+			"QOGYKYOWIZ/moc_RequestBatchHandler.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler.h",
+			"MU",
+			"QOGYKYOWIZ/moc_RequestHandler.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/Request.h",
+			"MU",
+			"TUOHR6LDUK/moc_Request.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/RequestBatchRequest.h",
+			"MU",
+			"TUOHR6LDUK/moc_RequestBatchRequest.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/RequestResult.h",
+			"MU",
+			"TUOHR6LDUK/moc_RequestResult.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/types/RequestBatchExecutionType.h",
+			"MU",
+			"ZY36PVPJR2/moc_RequestBatchExecutionType.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/types/RequestStatus.h",
+			"MU",
+			"ZY36PVPJR2/moc_RequestStatus.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Compat.h",
+			"MU",
+			"VSCBVMNR7M/moc_Compat.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Crypto.h",
+			"MU",
+			"VSCBVMNR7M/moc_Crypto.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Json.h",
+			"MU",
+			"VSCBVMNR7M/moc_Json.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs.h",
+			"MU",
+			"VSCBVMNR7M/moc_Obs.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_VolumeMeter.h",
+			"MU",
+			"VSCBVMNR7M/moc_Obs_VolumeMeter.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_VolumeMeter_Helpers.h",
+			"MU",
+			"VSCBVMNR7M/moc_Obs_VolumeMeter_Helpers.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Platform.h",
+			"MU",
+			"VSCBVMNR7M/moc_Platform.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Utils.h",
+			"MU",
+			"VSCBVMNR7M/moc_Utils.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/WebSocketServer.h",
+			"MU",
+			"HKRC5MA5CN/moc_WebSocketServer.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/rpc/WebSocketSession.h",
+			"MU",
+			"FQIJANZ2NU/moc_WebSocketSession.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/types/WebSocketCloseCode.h",
+			"MU",
+			"T3J6VQITNQ/moc_WebSocketCloseCode.cpp",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/types/WebSocketOpCode.h",
+			"MU",
+			"T3J6VQITNQ/moc_WebSocketOpCode.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/obs-websocket_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"ASIO_STANDALONE",
+		"ENABLE_HEVC",
+		"HAVE_OBSCONFIG_H",
+		"JSON_DIAGNOSTICS=0",
+		"JSON_USE_IMPLICIT_CONVERSIONS=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_SVG_LIB",
+		"QT_WIDGETS_LIB",
+		"WIN32",
+		"_WEBSOCKETPP_CPP11_STL_",
+		"obs_websocket_EXPORTS"
+	],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"ASIO_STANDALONE",
+		"ENABLE_HEVC",
+		"HAVE_OBSCONFIG_H",
+		"JSON_DIAGNOSTICS=0",
+		"JSON_USE_IMPLICIT_CONVERSIONS=1",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_SVG_LIB",
+		"QT_WIDGETS_LIB",
+		"WIN32",
+		"_WEBSOCKETPP_CPP11_STL_",
+		"obs_websocket_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/asio/asio/include",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/websocketpp",
+		"D:/sourcecode/obs/obs-studio/libobs",
+		"D:/sourcecode/obs/obs-studio/build/config",
+		"D:/sourcecode/obs/obs-studio/UI/obs-frontend-api",
+		"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/json/single_include",
+		"C:/Qt/5.15.2/msvc2019_64/include",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtCore",
+		"C:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtWidgets",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtGui",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtANGLE",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtSvg",
+		"C:/Qt/5.15.2/msvc2019_64/include/QtNetwork"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/qr/cpp/QrCode.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/Config.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/WebSocketApi.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Config.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Filters.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_General.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Inputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_MediaInputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Outputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_SceneItems.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Scenes.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Transitions.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/eventhandler/EventHandler_Ui.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/ConnectInfo.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/forms/SettingsDialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/obs-websocket.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestBatchHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Config.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Filters.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_General.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Inputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_MediaInputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Outputs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Record.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_SceneItems.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Scenes.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Sources.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Stream.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Transitions.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/RequestHandler_Ui.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/Request.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/RequestBatchRequest.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/requesthandler/rpc/RequestResult.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Compat.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Crypto.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Json.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_ActionHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_ArrayHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_NumberHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_ObjectHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_SearchHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_StringHelper.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Obs_VolumeMeter.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/utils/Platform.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/WebSocketServer.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/WebSocketServer_Protocol.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/sourcecode/obs/obs-studio/plugins/obs-websocket/src/websocketserver/rpc/WebSocketSession.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3C397B2-C4CB-3908-B3B1-DFF939CF005E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>aja</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aja.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aja</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aja.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aja</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aja.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aja</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aja.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aja</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajaanc" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajabase" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2/includes"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;_DEBUG;_NDEBUG;CMAKE_INTDIR="Debug";aja_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;_NDEBUG;CMAKE_INTDIR=\"Debug\";aja_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing aja to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Debug --prefix D:/sourcecode/obs/obs-studio/build/rundir/Debug --component obs_aja &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\libobs\Debug\obs.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\ajantv2d.lib;ws2_32.lib;setupapi.lib;Winmm.lib;netapi32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/aja/Debug/aja.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/aja/Debug/aja.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajaanc" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajabase" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2/includes"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR="Release";aja_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR=\"Release\";aja_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing aja to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Release --prefix D:/sourcecode/obs/obs-studio/build/rundir/Release --component obs_aja &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\libobs\Release\obs.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\ajantv2.lib;ws2_32.lib;setupapi.lib;Winmm.lib;netapi32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/aja/Release/aja.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/aja/Release/aja.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajaanc" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajabase" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2/includes"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR="MinSizeRel";aja_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR=\"MinSizeRel\";aja_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing aja to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config MinSizeRel --prefix D:/sourcecode/obs/obs-studio/build/rundir/MinSizeRel --component obs_aja &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\libobs\MinSizeRel\obs.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\ajantv2.lib;ws2_32.lib;setupapi.lib;Winmm.lib;netapi32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/aja/MinSizeRel/aja.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/aja/MinSizeRel/aja.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajaanc" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajabase" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include/ajalibraries/ajantv2/includes"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR="RelWithDebInfo";aja_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;HAVE_OBSCONFIG_H;AJA_WINDOWS;MSWindows;CMAKE_INTDIR=\"RelWithDebInfo\";aja_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajaanc;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajabase;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include\ajalibraries\ajantv2\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing aja to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config RelWithDebInfo --prefix D:/sourcecode/obs/obs-studio/build/rundir/RelWithDebInfo --component obs_aja &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\libobs\RelWithDebInfo\obs.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\ajantv2.lib;ws2_32.lib;setupapi.lib;Winmm.lib;netapi32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/aja/RelWithDebInfo/aja.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/aja/RelWithDebInfo/aja.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\plugins\aja\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/aja/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/aja/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibAJANTV2.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/aja/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/aja/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibAJANTV2.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/aja/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/aja/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibAJANTV2.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/aja/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/aja/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibAJANTV2.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\aja\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\main.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-card-manager.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-common.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-common.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-output.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-enums.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-output.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-presets.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-presets.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-props.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-props.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-routing.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-routing.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-source.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-source.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-vpid-data.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-vpid-data.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-widget-io.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-widget-io.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-card-manager.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-ui-props.hpp" />
+    <ResourceCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\aja\win-aja.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\ZERO_CHECK.proj">
+      <Project>{2AB59A9A-F0F2-313E-98F9-3A4BB116551A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs\libobs.vcxproj">
+      <Project>{66173818-0614-3B8F-B7E8-765199FB3294}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

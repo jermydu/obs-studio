@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D077B140-245F-32FF-8C72-7F519B216228}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>obs-ffmpeg</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs-ffmpeg.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs-ffmpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs-ffmpeg.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs-ffmpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs-ffmpeg.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs-ffmpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs-ffmpeg.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs-ffmpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Debug";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib;D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Debug\";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing obs-ffmpeg to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Debug --prefix D:/sourcecode/obs/obs-studio/build/rundir/Debug --component obs_obs-ffmpeg &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avfilter.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swscale.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swresample.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\librist.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\libsrt.lib;ws2_32.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avformat.lib;..\..\libobs\Debug\obs.lib;..\..\deps\w32-pthreads\Debug\w32-pthreads.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/Debug/obs-ffmpeg.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/Debug/obs-ffmpeg.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Release";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib;D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Release\";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing obs-ffmpeg to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Release --prefix D:/sourcecode/obs/obs-studio/build/rundir/Release --component obs_obs-ffmpeg &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avfilter.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swscale.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swresample.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\librist.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\libsrt.lib;ws2_32.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avformat.lib;..\..\libobs\Release\obs.lib;..\..\deps\w32-pthreads\Release\w32-pthreads.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/Release/obs-ffmpeg.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/Release/obs-ffmpeg.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR="MinSizeRel";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib;D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing obs-ffmpeg to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config MinSizeRel --prefix D:/sourcecode/obs/obs-studio/build/rundir/MinSizeRel --component obs_obs-ffmpeg &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avfilter.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swscale.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swresample.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\librist.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\libsrt.lib;ws2_32.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avformat.lib;..\..\libobs\MinSizeRel\obs.lib;..\..\deps\w32-pthreads\MinSizeRel\w32-pthreads.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/MinSizeRel/obs-ffmpeg.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/MinSizeRel/obs-ffmpeg.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR="RelWithDebInfo";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalUsingDirectories>D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib;D:/sourcecode/obs/windows-deps-2022-07-18-x64/lib/../lib</AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NEW_MPEGTS_OUTPUT;ENABLE_HEVC;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";obs_ffmpeg_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\deps\media-playback;D:\sourcecode\obs\obs-studio\deps\opts-parser;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Installing obs-ffmpeg to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config RelWithDebInfo --prefix D:/sourcecode/obs/obs-studio/build/rundir/RelWithDebInfo --component obs_obs-ffmpeg &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avfilter.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swscale.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\swresample.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\librist.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\libsrt.lib;ws2_32.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avdevice.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\..\lib\avformat.lib;..\..\libobs\RelWithDebInfo\obs.lib;..\..\deps\w32-pthreads\RelWithDebInfo\w32-pthreads.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/RelWithDebInfo/obs-ffmpeg.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/RelWithDebInfo/obs-ffmpeg.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibrist.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibsrt.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibrist.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibsrt.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibrist.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibsrt.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-ffmpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-ffmpeg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibrist.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindLibsrt.cmake;D:\sourcecode\obs\obs-studio\cmake\bundle\windows\obs-module.rc.in;D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-video-encoders.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-audio-encoders.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-av1.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-nvenc.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-output.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-mux.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-mux.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-hls-mux.c" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-source.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-compat.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-formats.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\config\obs-ffmpeg-config.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-mpegts.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-srt.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-rist.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\obs-ffmpeg-url.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\texture-amf.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\texture-amf-opts.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\jim-nvenc.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\jim-nvenc.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-ffmpeg\jim-nvenc-helpers.c" />
+    <ResourceCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\obs-ffmpeg.rc" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\media-playback\media-playback\media.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\media-playback\media-playback\media.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\media-playback\media-playback\decode.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\media-playback\media-playback\decode.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\media-playback\media-playback\closest-format.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\opts-parser\opts-parser.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\opts-parser\opts-parser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\ZERO_CHECK.proj">
+      <Project>{2AB59A9A-F0F2-313E-98F9-3A4BB116551A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs\libobs.vcxproj">
+      <Project>{66173818-0614-3B8F-B7E8-765199FB3294}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\deps\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{8EE846AD-A11B-3A95-85F5-A17B6F79A9E1}</Project>
+      <Name>w32-pthreads</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

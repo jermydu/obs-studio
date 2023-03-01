@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77DC32E9-4051-3103-9A51-008D0E37805E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>obs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\UI\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\UI\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\UI\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\UI\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtXml" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWinExtras"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL="";DL_D3D11="libobs-d3d11.dll";DL_OPENGL="libobs-opengl.dll";DL_D3D9="";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL=\"\";DL_D3D11=\"libobs-d3d11.dll\";DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/sourcecode/obs/obs-studio/build/UI/obs_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing OBS rundir	Installing OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Debug --prefix D:/sourcecode/obs/obs-studio/build/rundir/Debug --component obs_obs &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Debug --prefix D:/sourcecode/obs/obs-studio/build/rundir/Debug --component obs_rundir &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\libcurl_imp.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;obs-frontend-api\Debug\obs-frontend-api.lib;crypt32.lib;..\deps\blake2\Debug\blake2.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svgd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Xmld.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Networkd.lib;wldap32.lib;winmm.lib;ws2_32.lib;advapi32.lib;crypt32.lib;..\libobs\Debug\obs.lib;..\deps\w32-pthreads\Debug\w32-pthreads.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5WinExtrasd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmaind.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4098 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/UI/Debug/obs64.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/UI/Debug/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\sourcecode\obs\obs-studio\UI\obs.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtXml" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWinExtras"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL="";DL_D3D11="libobs-d3d11.dll";DL_OPENGL="libobs-opengl.dll";DL_D3D9="";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL=\"\";DL_D3D11=\"libobs-d3d11.dll\";DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/sourcecode/obs/obs-studio/build/UI/obs_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing OBS rundir	Installing OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Release --prefix D:/sourcecode/obs/obs-studio/build/rundir/Release --component obs_obs &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Release --prefix D:/sourcecode/obs/obs-studio/build/rundir/Release --component obs_rundir &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\libcurl_imp.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;obs-frontend-api\Release\obs-frontend-api.lib;crypt32.lib;..\deps\blake2\Release\blake2.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Xml.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;wldap32.lib;winmm.lib;ws2_32.lib;advapi32.lib;crypt32.lib;..\libobs\Release\obs.lib;..\deps\w32-pthreads\Release\w32-pthreads.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5WinExtras.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4098 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/UI/Release/obs64.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/UI/Release/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\sourcecode\obs\obs-studio\UI\obs.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtXml" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWinExtras"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL="";DL_D3D11="libobs-d3d11.dll";DL_OPENGL="libobs-opengl.dll";DL_D3D9="";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL=\"\";DL_D3D11=\"libobs-d3d11.dll\";DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/sourcecode/obs/obs-studio/build/UI/obs_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing OBS rundir	Installing OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config MinSizeRel --prefix D:/sourcecode/obs/obs-studio/build/rundir/MinSizeRel --component obs_obs &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config MinSizeRel --prefix D:/sourcecode/obs/obs-studio/build/rundir/MinSizeRel --component obs_rundir &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\libcurl_imp.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;obs-frontend-api\MinSizeRel\obs-frontend-api.lib;crypt32.lib;..\deps\blake2\MinSizeRel\blake2.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Xml.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;wldap32.lib;winmm.lib;ws2_32.lib;advapi32.lib;crypt32.lib;..\libobs\MinSizeRel\obs.lib;..\deps\w32-pthreads\MinSizeRel\w32-pthreads.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5WinExtras.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4098 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/UI/MinSizeRel/obs64.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/UI/MinSizeRel/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\sourcecode\obs\obs-studio\UI\obs.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtXml" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork" /external:I "D:/sourcecode/obs/windows-deps-2022-07-18-x64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWinExtras"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL="";DL_D3D11="libobs-d3d11.dll";DL_OPENGL="libobs-opengl.dll";DL_D3D9="";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DL_METAL=\"\";DL_D3D11=\"libobs-d3d11.dll\";DL_OPENGL=\"libobs-opengl.dll\";DL_D3D9=\"\";ENABLE_HEVC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB;HAVE_OBSCONFIG_H;QT_WINEXTRAS_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\UI;D:\sourcecode\obs\obs-studio\build\UI;D:\sourcecode\obs\obs-studio\deps\json11;D:\sourcecode\obs\obs-studio\deps\libff;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\deps\blake2\src;D:\sourcecode\obs\obs-studio\deps\w32-pthreads;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtXml;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;D:\sourcecode\obs\windows-deps-2022-07-18-x64\include;C:\Qt\5.15.2\msvc2019_64\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/sourcecode/obs/obs-studio/build/UI/obs_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing OBS rundir	Installing OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config RelWithDebInfo --prefix D:/sourcecode/obs/obs-studio/build/rundir/RelWithDebInfo --component obs_obs &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config RelWithDebInfo --prefix D:/sourcecode/obs/obs-studio/build/rundir/RelWithDebInfo --component obs_rundir &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\libcurl_imp.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avcodec.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avutil.lib;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\avformat.lib;obs-frontend-api\RelWithDebInfo\obs-frontend-api.lib;crypt32.lib;..\deps\blake2\RelWithDebInfo\blake2.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Xml.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;wldap32.lib;winmm.lib;ws2_32.lib;advapi32.lib;crypt32.lib;..\libobs\RelWithDebInfo\obs.lib;..\deps\w32-pthreads\RelWithDebInfo\w32-pthreads.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5WinExtras.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;C:\Qt\5.15.2\msvc2019_64\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4098 /IGNORE:4099</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/UI/RelWithDebInfo/obs64.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/UI/RelWithDebInfo/obs64.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\sourcecode\obs\obs-studio\UI\obs.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\build\CMakeFiles\08f7dc5089651c1599495a2a6bc56413\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigFinishPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStartPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStreamPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigTestPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigVideoPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\ColorSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAbout.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAdvAudio.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasic.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicFilters.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicInteraction.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSettings.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSourceSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicTransform.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicVCamConfig.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSExtraBrowsers.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSImporter.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSLogReply.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSMissingFiles.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSRemux.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSUpdate.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSYoutubeActions.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\browser-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\color-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\device-select-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\game-capture-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\image-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\media-controls.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\text-source-toolbar.ui;C:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigFinishPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStartPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStreamPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigTestPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigVideoPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\ColorSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAbout.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAdvAudio.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasic.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicFilters.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicInteraction.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSettings.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSourceSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicTransform.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicVCamConfig.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSExtraBrowsers.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSImporter.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSLogReply.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSMissingFiles.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSRemux.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSUpdate.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSYoutubeActions.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\browser-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\color-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\device-select-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\game-capture-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\image-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\media-controls.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\text-source-toolbar.ui;C:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigFinishPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStartPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStreamPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigTestPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigVideoPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\ColorSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAbout.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAdvAudio.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasic.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicFilters.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicInteraction.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSettings.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSourceSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicTransform.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicVCamConfig.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSExtraBrowsers.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSImporter.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSLogReply.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSMissingFiles.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSRemux.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSUpdate.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSYoutubeActions.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\browser-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\color-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\device-select-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\game-capture-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\image-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\media-controls.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\text-source-toolbar.ui;C:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigFinishPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStartPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStreamPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigTestPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigVideoPage.ui;D:\sourcecode\obs\obs-studio\UI\forms\ColorSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAbout.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSAdvAudio.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasic.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicFilters.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicInteraction.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSettings.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSourceSelect.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicTransform.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicVCamConfig.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSExtraBrowsers.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSImporter.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSLogReply.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSMissingFiles.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSRemux.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSUpdate.ui;D:\sourcecode\obs\obs-studio\UI\forms\OBSYoutubeActions.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\browser-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\color-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\device-select-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\game-capture-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\image-source-toolbar.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\media-controls.ui;D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\text-source-toolbar.ui;C:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\build\CMakeFiles\114f198d1d818afe819d1a073aac3b90\qrc_obs.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for forms/obs.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\obs_autogen.dir\AutoRcc_obs_QM7UNKGVG2_Info.json;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\hotkeys.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\general.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\output.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\stream.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\video.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\audio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\accessibility.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\advanced.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\dots-vert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\plus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\revert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_256x256.png;D:\sourcecode\obs\obs-studio\UI\forms\images\minus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\no_sources.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\invisible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\down.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\filter.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\locked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\warning.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\dots.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\alert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\cogs.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\right.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\refresh.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\up.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\collapse.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\expand.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help_light.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\interact.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\unlocked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\visible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\save.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\trash.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\paused_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs.png;D:\sourcecode\obs\obs-studio\UI\forms\images\mute.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_previous.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_next.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_restart.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_stop.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_play.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\image.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\globe.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\camera.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\media.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\microphone.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\brush.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\scene.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\slideshow.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\window.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\windowaudio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\text.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\gamepad.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\group.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\default.svg;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Italic.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Regular.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Bold.ttf;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\QM7UNKGVG2\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for forms/obs.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\obs_autogen.dir\AutoRcc_obs_QM7UNKGVG2_Info.json;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\hotkeys.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\general.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\output.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\stream.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\video.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\audio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\accessibility.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\advanced.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\dots-vert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\plus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\revert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_256x256.png;D:\sourcecode\obs\obs-studio\UI\forms\images\minus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\no_sources.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\invisible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\down.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\filter.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\locked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\warning.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\dots.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\alert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\cogs.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\right.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\refresh.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\up.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\collapse.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\expand.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help_light.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\interact.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\unlocked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\visible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\save.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\trash.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\paused_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs.png;D:\sourcecode\obs\obs-studio\UI\forms\images\mute.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_previous.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_next.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_restart.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_stop.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_play.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\image.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\globe.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\camera.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\media.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\microphone.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\brush.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\scene.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\slideshow.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\window.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\windowaudio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\text.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\gamepad.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\group.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\default.svg;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Italic.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Regular.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Bold.ttf;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\QM7UNKGVG2\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for forms/obs.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\obs_autogen.dir\AutoRcc_obs_QM7UNKGVG2_Info.json;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\hotkeys.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\general.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\output.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\stream.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\video.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\audio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\accessibility.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\advanced.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\dots-vert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\plus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\revert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_256x256.png;D:\sourcecode\obs\obs-studio\UI\forms\images\minus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\no_sources.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\invisible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\down.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\filter.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\locked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\warning.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\dots.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\alert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\cogs.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\right.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\refresh.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\up.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\collapse.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\expand.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help_light.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\interact.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\unlocked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\visible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\save.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\trash.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\paused_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs.png;D:\sourcecode\obs\obs-studio\UI\forms\images\mute.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_previous.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_next.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_restart.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_stop.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_play.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\image.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\globe.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\camera.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\media.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\microphone.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\brush.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\scene.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\slideshow.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\window.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\windowaudio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\text.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\gamepad.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\group.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\default.svg;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Italic.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Regular.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Bold.ttf;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\QM7UNKGVG2\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for forms/obs.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\UI
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/obs_autogen.dir/AutoRcc_obs_QM7UNKGVG2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\obs_autogen.dir\AutoRcc_obs_QM7UNKGVG2_Info.json;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\hotkeys.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\general.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\output.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\stream.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\video.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\audio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\accessibility.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\settings\advanced.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\dots-vert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\plus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\revert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_256x256.png;D:\sourcecode\obs\obs-studio\UI\forms\images\minus.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\no_sources.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\invisible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\down.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\filter.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\locked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\warning.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\dots.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\alert.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\cogs.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\right.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\refresh.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\up.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\collapse.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\expand.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\help_light.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\streaming-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\interact.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused_macos.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\unlocked.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\visible.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-pause-inactive.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\obs_paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\save.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\tray_active.png;D:\sourcecode\obs\obs-studio\UI\forms\images\paused.png;D:\sourcecode\obs\obs-studio\UI\forms\images\recording-active.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\trash.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\paused_mac.png;D:\sourcecode\obs\obs-studio\UI\forms\images\obs.png;D:\sourcecode\obs\obs-studio\UI\forms\images\mute.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_previous.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_next.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_restart.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_pause.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_stop.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\media\media_play.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\image.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\globe.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\camera.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\media.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\microphone.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\brush.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\scene.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\slideshow.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\window.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\windowaudio.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\text.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\gamepad.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\group.svg;D:\sourcecode\obs\obs-studio\UI\forms\images\sources\default.svg;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Italic.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Regular.ttf;D:\sourcecode\obs\obs-studio\UI\forms\fonts\OpenSans-Bold.ttf;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\QM7UNKGVG2\qrc_obs.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\UI\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\UI\obs.rc.in;D:\sourcecode\obs\obs-studio\UI\ui-config.h.in;D:\sourcecode\obs\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfig.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfigVersion.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets-release.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\UI\obs.rc.in;D:\sourcecode\obs\obs-studio\UI\ui-config.h.in;D:\sourcecode\obs\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfig.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfigVersion.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets-release.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\UI\obs.rc.in;D:\sourcecode\obs\obs-studio\UI\ui-config.h.in;D:\sourcecode\obs\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfig.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfigVersion.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets-release.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/UI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/UI/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5WinExtras\Qt5WinExtrasConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc;D:\sourcecode\obs\obs-studio\UI\obs.rc.in;D:\sourcecode\obs\obs-studio\UI\ui-config.h.in;D:\sourcecode\obs\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\sourcecode\obs\obs-studio\cmake\Modules\FindFFmpeg.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfig.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLConfigVersion.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets-release.cmake;D:\sourcecode\obs\windows-deps-2022-07-18-x64\lib\cmake\CURL\CURLTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\UI\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\obs.qrc">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigFinishPage.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStartPage.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigStreamPage.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigTestPage.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\AutoConfigVideoPage.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\ColorSelect.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSAbout.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSAdvAudio.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasic.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicFilters.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicInteraction.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSettings.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicSourceSelect.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicTransform.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSBasicVCamConfig.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSExtraBrowsers.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSImporter.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSLogReply.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSMissingFiles.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSRemux.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSUpdate.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\OBSYoutubeActions.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\browser-source-toolbar.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\color-source-toolbar.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\device-select-toolbar.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\game-capture-toolbar.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\image-source-toolbar.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\media-controls.ui">
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\forms\source-toolbar\text-source-toolbar.ui">
+    </None>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\auth-oauth.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\auth-oauth.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\auth-listener.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\auth-listener.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\obf.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\obf.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\obs-app.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\obs-app.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\obs-proxy-style.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\obs-proxy-style.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\api-interface.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\auth-base.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\auth-base.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\crash-report.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\crash-report.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\display-helpers.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\platform.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\qt-display.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\qt-display.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\qt-wrappers.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\qt-wrappers.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\ui-validation.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\ui-validation.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\multiview.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\multiview.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\json11\json11.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\json11\json11.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\libff\libff\ff-util.c" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\libff\libff\ff-util.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\ui-config.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\adv-audio-control.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\adv-audio-control.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\audio-encoders.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\audio-encoders.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\balance-slider.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\clickable-label.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\double-slider.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\double-slider.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\horizontal-scroll-area.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\horizontal-scroll-area.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\item-widget-helpers.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\item-widget-helpers.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\context-bar-controls.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\context-bar-controls.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\expand-checkbox.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\focus-list.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\focus-list.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\hotkey-edit.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\hotkey-edit.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\lineedit-autoresize.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\lineedit-autoresize.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\locked-checkbox.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\locked-checkbox.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\log-viewer.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\log-viewer.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\media-controls.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\media-controls.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\media-slider.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\media-slider.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\menu-button.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\menu-button.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\mute-checkbox.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\properties-view.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\properties-view.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\properties-view.moc.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\record-button.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\record-button.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\remote-text.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\remote-text.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\scene-tree.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\scene-tree.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\screenshot-obj.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\slider-absoluteset-style.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\slider-absoluteset-style.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\slider-ignorewheel.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\slider-ignorewheel.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\source-label.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\source-label.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\spinbox-ignorewheel.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\spinbox-ignorewheel.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\source-tree.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\source-tree.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\url-push-button.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\url-push-button.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\undo-stack-obs.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\undo-stack-obs.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\volume-control.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\volume-control.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\vertical-scroll-area.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\vertical-scroll-area.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\visibility-checkbox.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\visibility-checkbox.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\visibility-item-widget.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\visibility-item-widget.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-about.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-about.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-auto-config.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-auto-config.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-auto-config-test.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-adv-audio.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-adv-audio.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-filters.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-filters.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-interaction.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-interaction.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-browser.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-dropfiles.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-icons.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-outputs.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-outputs.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-profiles.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-scene-collections.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-screenshot.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-main-transitions.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-preview.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-properties.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-properties.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-settings.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-settings.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-settings-a11y.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-settings-stream.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-source-select.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-source-select.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-stats.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-stats.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-status-bar.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-status-bar.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-transform.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-transform.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-preview.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-basic-vcam-config.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-basic-vcam-config.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-dock.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-dock.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-importer.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-importer.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-log-reply.hpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-main.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-missing-files.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-missing-files.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-namedialog.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-namedialog.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-log-reply.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-projector.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-projector.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\window-remux.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\window-remux.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\importers\importers.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\importers\importers.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\importers\classic.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\importers\sl.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\importers\studio.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\importers\xsplit.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\platform-windows.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\win-update\update-window.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\win-update\update-window.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\win-update\win-update.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\win-update\win-update.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\win-update\win-update-helpers.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\win-update\win-update-helpers.hpp" />
+    <ResourceCompile Include="D:\sourcecode\obs\obs-studio\build\obs.rc" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_AutoConfigFinishPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_AutoConfigStartPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_AutoConfigTestPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_ColorSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSAbout.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSAdvAudio.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasic.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSBasicVCamConfig.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSExtraBrowsers.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSImporter.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSMissingFiles.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSRemux.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSUpdate.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_OBSYoutubeActions.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_browser-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_color-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_device-select-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_game-capture-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_image-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_media-controls.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Debug\ui_text-source-toolbar.h" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\QM7UNKGVG2\qrc_obs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_AutoConfigFinishPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_AutoConfigStartPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_AutoConfigTestPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_ColorSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSAbout.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSAdvAudio.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasic.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSBasicVCamConfig.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSExtraBrowsers.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSImporter.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSMissingFiles.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSRemux.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSUpdate.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_OBSYoutubeActions.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_browser-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_color-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_device-select-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_game-capture-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_image-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_media-controls.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_Release\ui_text-source-toolbar.h" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_AutoConfigFinishPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_AutoConfigStartPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_AutoConfigTestPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_ColorSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSAbout.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSAdvAudio.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasic.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSBasicVCamConfig.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSExtraBrowsers.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSImporter.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSMissingFiles.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSRemux.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSUpdate.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_OBSYoutubeActions.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_browser-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_color-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_device-select-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_game-capture-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_image-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_media-controls.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_MinSizeRel\ui_text-source-toolbar.h" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_AutoConfigFinishPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_AutoConfigStartPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_AutoConfigTestPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_ColorSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSAbout.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSAdvAudio.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasic.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicFilters.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicInteraction.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicSettings.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicTransform.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSBasicVCamConfig.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSExtraBrowsers.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSImporter.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSLogReply.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSMissingFiles.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSRemux.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSUpdate.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_OBSYoutubeActions.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_browser-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_color-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_device-select-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_game-capture-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_image-source-toolbar.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_media-controls.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\include_RelWithDebInfo\ui_text-source-toolbar.h" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\obs_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\ZERO_CHECK.proj">
+      <Project>{2AB59A9A-F0F2-313E-98F9-3A4BB116551A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\aja\aja.vcxproj">
+      <Project>{A3C397B2-C4CB-3908-B3B1-DFF939CF005E}</Project>
+      <Name>aja</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui.vcxproj">
+      <Project>{661F7C77-FA1B-3D6D-B3C0-E0F0B5A099BA}</Project>
+      <Name>aja-output-ui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\deps\blake2\blake2.vcxproj">
+      <Project>{11B3136A-02C7-33BD-96E9-29C2E67A47BD}</Project>
+      <Name>blake2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\coreaudio-encoder\coreaudio-encoder.vcxproj">
+      <Project>{C6065535-54CF-3195-82FA-B7188AE0BA3E}</Project>
+      <Name>coreaudio-encoder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\decklink\decklink.vcxproj">
+      <Project>{77597873-501D-3C03-AB4F-B8067D28B59D}</Project>
+      <Name>decklink</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\decklink-captions\decklink-captions.vcxproj">
+      <Project>{13E5FA10-1585-33DE-9937-F3EC673DF6D8}</Project>
+      <Name>decklink-captions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\decklink-output-ui\decklink-output-ui.vcxproj">
+      <Project>{614DB6F4-46AB-3654-80BC-A438EFBD8732}</Project>
+      <Name>decklink-output-ui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\enc-amf\enc-amf.vcxproj">
+      <Project>{F32725E3-B450-3D6F-B32E-AFC7546A4F25}</Project>
+      <Name>enc-amf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\frontend-tools\frontend-tools.vcxproj">
+      <Project>{538B8A29-A9C6-3F9E-B8E0-629C22A72D0F}</Project>
+      <Name>frontend-tools</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-capture\get-graphics-offsets\get-graphics-offsets.vcxproj">
+      <Project>{40463EC8-B89E-382A-8B8E-8D4F76BC5340}</Project>
+      <Name>get-graphics-offsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-capture\graphics-hook\graphics-hook.vcxproj">
+      <Project>{94342FCF-FAE5-356F-9209-341BEDF2AE2F}</Project>
+      <Name>graphics-hook</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\image-source\image-source.vcxproj">
+      <Project>{88F6D450-857F-340E-8DFC-E7573F8DA99E}</Project>
+      <Name>image-source</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-capture\inject-helper\inject-helper.vcxproj">
+      <Project>{31D49831-8976-3144-94F8-CC82F48F8BEA}</Project>
+      <Name>inject-helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs\libobs.vcxproj">
+      <Project>{66173818-0614-3B8F-B7E8-765199FB3294}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs-d3d11\libobs-d3d11.vcxproj">
+      <Project>{D189A6AC-BDDE-35C7-8C46-60AF258F1981}</Project>
+      <Name>libobs-d3d11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs-opengl\libobs-opengl.vcxproj">
+      <Project>{E3733000-13B1-3C27-9D06-5A41135EAC77}</Project>
+      <Name>libobs-opengl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\obs-ffmpeg.vcxproj">
+      <Project>{D077B140-245F-32FF-8C72-7F519B216228}</Project>
+      <Name>obs-ffmpeg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-ffmpeg\ffmpeg-mux\obs-ffmpeg-mux.vcxproj">
+      <Project>{7E8D8DE5-EC85-3E36-BFE6-F933F7DC1483}</Project>
+      <Name>obs-ffmpeg-mux</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-filters\obs-filters.vcxproj">
+      <Project>{02F7F8BD-F8E1-332E-935A-7841B0EA2F9B}</Project>
+      <Name>obs-filters</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{736EAD89-F9D0-372E-808C-46607CD8436E}</Project>
+      <Name>obs-frontend-api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-outputs\obs-outputs.vcxproj">
+      <Project>{D391D2C9-992D-3CA5-98B8-E8C37EF74BDB}</Project>
+      <Name>obs-outputs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-qsv11\obs-qsv11.vcxproj">
+      <Project>{EE16940C-8A7B-3CAE-ABA6-06D94844C677}</Project>
+      <Name>obs-qsv11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-text\obs-text.vcxproj">
+      <Project>{1D8EFB1A-F733-36EB-8423-3E7AD55177FE}</Project>
+      <Name>obs-text</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-transitions\obs-transitions.vcxproj">
+      <Project>{4299E942-12ED-3BA0-ACDB-708DF17F99FD}</Project>
+      <Name>obs-transitions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-vst\obs-vst.vcxproj">
+      <Project>{6862B9DB-EEFF-3175-908D-850453AD2457}</Project>
+      <Name>obs-vst</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket.vcxproj">
+      <Project>{E740A736-06C6-3471-A5ED-1B60F79BAB67}</Project>
+      <Name>obs-websocket</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-x264\obs-x264.vcxproj">
+      <Project>{029B27CF-E400-3FAF-9C18-8870465CA746}</Project>
+      <Name>obs-x264</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\deps\obs-scripting\obslua\obslua.vcxproj">
+      <Project>{C8FAB9C9-DA6F-3963-AF2F-421EA477836E}</Project>
+      <Name>obslua</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\deps\obs-scripting\obspython\obspython.vcxproj">
+      <Project>{D3F14EF6-0DAF-3F37-8A1F-D47ABAE803BC}</Project>
+      <Name>obspython</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\rtmp-services\rtmp-services.vcxproj">
+      <Project>{61C7C00D-940B-38A7-8498-323090C31E2F}</Project>
+      <Name>rtmp-services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\text-freetype2\text-freetype2.vcxproj">
+      <Project>{880696CB-08E4-3492-B8F3-FBED6C96A543}</Project>
+      <Name>text-freetype2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\deps\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{8EE846AD-A11B-3A95-85F5-A17B6F79A9E1}</Project>
+      <Name>w32-pthreads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-capture\win-capture.vcxproj">
+      <Project>{12FDBD54-D7AD-3224-B3F1-9C01470116AA}</Project>
+      <Name>win-capture</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-dshow\win-dshow.vcxproj">
+      <Project>{33551F68-8C8E-37E5-BCF8-0BEA59D8E470}</Project>
+      <Name>win-dshow</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-mf\win-mf.vcxproj">
+      <Project>{16D4ACCA-FF9D-38CB-8000-FADE7D0D96A5}</Project>
+      <Name>win-mf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\plugins\win-wasapi\win-wasapi.vcxproj">
+      <Project>{4465DBE4-1C71-30B6-A143-C2430E3649F7}</Project>
+      <Name>win-wasapi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

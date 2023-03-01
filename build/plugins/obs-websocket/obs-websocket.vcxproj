@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E740A736-06C6-3471-A5ED-1B60F79BAB67}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>obs-websocket</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs-websocket.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs-websocket</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs-websocket.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs-websocket</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs-websocket.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs-websocket</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs-websocket.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs-websocket</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Debug;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR="Debug";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG=1;_DEBUG=1;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR=\"Debug\";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Debug;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Debug;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs-websocket</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing obs-websocket to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Debug --prefix D:/sourcecode/obs/obs-studio/build/rundir/Debug --component obs_obs-websocket &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\UI\obs-frontend-api\Debug\obs-frontend-api.lib;..\..\libobs\Debug\obs.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svgd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Networkd.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/Debug/obs-websocket.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/Debug/obs-websocket.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Release;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR="Release";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR=\"Release\";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Release;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_Release;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs-websocket</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing obs-websocket to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config Release --prefix D:/sourcecode/obs/obs-studio/build/rundir/Release --component obs_obs-websocket &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\UI\obs-frontend-api\Release\obs-frontend-api.lib;..\..\libobs\Release\obs.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/Release/obs-websocket.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/Release/obs-websocket.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR="MinSizeRel";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR=\"MinSizeRel\";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_MinSizeRel;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs-websocket</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing obs-websocket to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config MinSizeRel --prefix D:/sourcecode/obs/obs-studio/build/rundir/MinSizeRel --component obs_obs-websocket &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\UI\obs-frontend-api\MinSizeRel\obs-frontend-api.lib;..\..\libobs\MinSizeRel\obs.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/MinSizeRel/obs-websocket.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/MinSizeRel/obs-websocket.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/msvc2019_64/include" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtSvg" /external:I "C:/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4201;4456;4457;4458;4459;4595;4267;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR="RelWithDebInfo";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;ENABLE_HEVC;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;HAVE_OBSCONFIG_H;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SVG_LIB;QT_NETWORK_LIB;JSON_USE_IMPLICIT_CONVERSIONS=1;JSON_DIAGNOSTICS=0;CMAKE_INTDIR=\"RelWithDebInfo\";obs_websocket_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\plugins\obs-websocket;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\include_RelWithDebInfo;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\asio\asio\include;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\websocketpp;D:\sourcecode\obs\obs-studio\libobs;D:\sourcecode\obs\obs-studio\build\config;D:\sourcecode\obs\obs-studio\UI\obs-frontend-api;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\single_include;C:\Qt\5.15.2\msvc2019_64\include;C:\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.2\msvc2019_64\include\QtWidgets;C:\Qt\5.15.2\msvc2019_64\include\QtGui;C:\Qt\5.15.2\msvc2019_64\include\QtANGLE;C:\Qt\5.15.2\msvc2019_64\include\QtSvg;C:\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target obs-websocket</Message>
+      <Command>setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>Installing obs-websocket to OBS rundir</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" --install .. --config RelWithDebInfo --prefix D:/sourcecode/obs/obs-studio/build/rundir/RelWithDebInfo --component obs_obs-websocket &gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\UI\obs-frontend-api\RelWithDebInfo\obs-frontend-api.lib;..\..\libobs\RelWithDebInfo\obs.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Svg.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/RelWithDebInfo/obs-websocket.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/RelWithDebInfo/obs-websocket.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\build\CMakeFiles\79c09335ae715139a35a33974b828ed9\qrc_resources.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for src/forms/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\obs-websocket_autogen.dir\AutoRcc_resources_GYHPFG4CL2_Info.json;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help.svg;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help_light.svg;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for src/forms/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\obs-websocket_autogen.dir\AutoRcc_resources_GYHPFG4CL2_Info.json;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help.svg;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help_light.svg;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for src/forms/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\obs-websocket_autogen.dir\AutoRcc_resources_GYHPFG4CL2_Info.json;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help.svg;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help_light.svg;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for src/forms/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/obs-websocket_autogen.dir/AutoRcc_resources_GYHPFG4CL2_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\obs-websocket_autogen.dir\AutoRcc_resources_GYHPFG4CL2_Info.json;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help.svg;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\images\help_light.svg;C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\plugin-macros.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\plugin-macros.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\plugin-macros.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/sourcecode/obs/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/sourcecode/obs/obs-studio -BD:/sourcecode/obs/obs-studio/build --check-stamp-file D:/sourcecode/obs/obs-studio/build/plugins/obs-websocket/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc;D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\plugin-macros.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\obs-websocket.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\obs-websocket.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\Config.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\Config.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\lib\obs-websocket-api.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\SettingsDialog.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\SettingsDialog.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\ConnectInfo.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\ConnectInfo.h" />
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc">
+    </None>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\WebSocketApi.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\WebSocketApi.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer_Protocol.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\rpc\WebSocketSession.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\rpc\WebSocketSession.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\types\WebSocketCloseCode.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\types\WebSocketOpCode.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_General.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Config.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Scenes.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Inputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Transitions.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Filters.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Outputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_SceneItems.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_MediaInputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Ui.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\types\EventSubscription.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_General.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Config.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Sources.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Scenes.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Inputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Transitions.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Filters.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_SceneItems.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Outputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Stream.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Record.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_MediaInputs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Ui.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestBatchHandler.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestBatchHandler.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\Request.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\Request.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestBatchRequest.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestBatchRequest.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestResult.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestResult.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\types\RequestStatus.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\types\RequestBatchExecutionType.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Crypto.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Crypto.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Json.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Json.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_StringHelper.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_NumberHelper.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ArrayHelper.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ObjectHelper.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_SearchHelper.cpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ActionHelper.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter_Helpers.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Platform.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Platform.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Compat.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Compat.h" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Utils.h" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\qr\cpp\QrCode.cpp" />
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\qr\cpp\QrCode.hpp" />
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp" />
+    <Natvis Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\nlohmann_json.natvis">
+    </Natvis>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\ZERO_CHECK.proj">
+      <Project>{2AB59A9A-F0F2-313E-98F9-3A4BB116551A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\libobs\libobs.vcxproj">
+      <Project>{66173818-0614-3B8F-B7E8-765199FB3294}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\sourcecode\obs\obs-studio\build\UI\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{736EAD89-F9D0-372E-808C-46607CD8436E}</Project>
+      <Name>obs-frontend-api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

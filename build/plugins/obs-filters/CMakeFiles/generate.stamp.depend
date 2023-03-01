@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPkgConfig.cmake
+D:/sourcecode/obs/obs-studio/cmake/Modules/FindLibrnnoise.cmake
+D:/sourcecode/obs/obs-studio/cmake/Modules/FindLibspeexdsp.cmake
+D:/sourcecode/obs/obs-studio/cmake/bundle/windows/obs-module.rc.in
+D:/sourcecode/obs/obs-studio/plugins/obs-filters/CMakeLists.txt

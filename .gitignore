@@ -6,7 +6,6 @@
 
 #cmake
 /cmbuild/
-/build/
 /build32/
 /build64/
 /release/

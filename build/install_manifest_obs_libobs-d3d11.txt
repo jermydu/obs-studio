@@ -1,0 +1,2 @@
+D:/sourcecode/obs/obs-studio/build/rundir/Debug/bin/64bit/libobs-d3d11.dll
+D:/sourcecode/obs/obs-studio/build/rundir/Debug/bin/64bit/libobs-d3d11.pdb

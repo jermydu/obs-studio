@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\AJAOutputUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\aja-ui-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-card-manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-presets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-props.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-routing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-vpid-data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-widget-io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\double-slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\properties-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\qt-wrappers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\spinbox-ignorewheel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\slider-ignorewheel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\UI\vertical-scroll-area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\AJAOutputUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\aja-ui-main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-card-manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-enums.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-presets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-props.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-routing.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-ui-props.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-vpid-data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\aja\aja-widget-io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\double-slider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\properties-view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\properties-view.moc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\qt-wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\spinbox-ignorewheel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\slider-ignorewheel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\UI\vertical-scroll-area.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\include_Debug\ui_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\include_Release\ui_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\include_MinSizeRel\ui_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\include_RelWithDebInfo\ui_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\build\CMakeFiles\f9f8d8ee8f671b371ce3d1d1b8ba1e9c\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\sourcecode\obs\obs-studio\UI\frontend-plugins\aja-output-ui\forms\output.ui">
+      <Filter>UI Files</Filter>
+    </None>
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\autouic_Debug.stamp" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\autouic_Release.stamp" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\sourcecode\obs\obs-studio\build\UI\frontend-plugins\aja-output-ui\aja-output-ui.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4877EDF8-7BAF-3BD5-AD4B-32C8B9B76D92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C7C4B19E-3FE5-3781-AE9F-FBCE9833A45E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4CE8C72C-90FB-379A-AFC3-1E019274013F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Files">
+      <UniqueIdentifier>{85EF01B7-FFFE-39EE-9D86-B2D9045839BF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+D:/sourcecode/obs/obs-studio/build/rundir/Debug/bin/64bit/libobs-winrt.dll
+D:/sourcecode/obs/obs-studio/build/rundir/Debug/bin/64bit/libobs-winrt.pdb

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\obs-websocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\SettingsDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\ConnectInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\WebSocketApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer_Protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\rpc\WebSocketSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_General.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Scenes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Inputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Transitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_SceneItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_MediaInputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler_Ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_General.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Sources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Scenes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Inputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Transitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_SceneItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Outputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_MediaInputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler_Ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestBatchHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\Request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestBatchRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_StringHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_NumberHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ArrayHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ObjectHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_SearchHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_ActionHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Compat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\qr\cpp\QrCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\GYHPFG4CL2\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\plugins\obs-websocket\obs-websocket_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\obs-websocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\lib\obs-websocket-api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\SettingsDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\ConnectInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\WebSocketApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\WebSocketServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\rpc\WebSocketSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\types\WebSocketCloseCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\websocketserver\types\WebSocketOpCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\EventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\eventhandler\types\EventSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\RequestBatchHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\Request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestBatchRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\rpc\RequestResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\types\RequestStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\requesthandler\types\RequestBatchExecutionType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Obs_VolumeMeter_Helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\qr\cpp\QrCode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\build\CMakeFiles\79c09335ae715139a35a33974b828ed9\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\deps\json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\sourcecode\obs\obs-studio\plugins\obs-websocket\src\forms\resources.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4877EDF8-7BAF-3BD5-AD4B-32C8B9B76D92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C7C4B19E-3FE5-3781-AE9F-FBCE9833A45E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4CE8C72C-90FB-379A-AFC3-1E019274013F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

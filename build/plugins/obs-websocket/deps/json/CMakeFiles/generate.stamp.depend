@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake
+D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/json/CMakeLists.txt
+D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/json/cmake/config.cmake.in
+D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/json/cmake/nlohmann_jsonConfigVersion.cmake.in
+D:/sourcecode/obs/obs-studio/plugins/obs-websocket/deps/json/cmake/pkg-config.pc.in

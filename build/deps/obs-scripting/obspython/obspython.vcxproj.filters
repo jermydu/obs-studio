@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\build\deps\obs-scripting\obspython\CMakeFiles\obspython.dir\obspythonPYTHON_wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\sourcecode\obs\obs-studio\deps\obs-scripting\cstrcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\obs-scripting\cstrcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\deps\obs-scripting\obs-scripting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\sourcecode\obs\obs-studio\build\config\obs-scripting-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\deps\obs-scripting\obspython\obspython.i" />
+    <CustomBuild Include="D:\sourcecode\obs\obs-studio\deps\obs-scripting\obspython\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\sourcecode\obs\obs-studio\build\deps\obs-scripting\obspython\obspython.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C7C4B19E-3FE5-3781-AE9F-FBCE9833A45E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4CE8C72C-90FB-379A-AFC3-1E019274013F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
