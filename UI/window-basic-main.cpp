@@ -1787,6 +1787,7 @@ void OBSBasic::OBSInit()
 
 	AddExtraModulePaths();
 	blog(LOG_INFO, "---------------------------------");
+	//load all modules
 	obs_load_all_modules2(&mfi);
 	blog(LOG_INFO, "---------------------------------");
 	obs_log_loaded_modules();
@@ -4419,7 +4420,7 @@ int OBSBasic::ResetVideo()
 		config_set_uint(basicConfig, "Video", "OutputCY",
 				ovi.base_height);
 	}
-
+	//create video thread
 	ret = AttemptToResetVideo(&ovi);
 	if (IS_WIN32 && ret != OBS_VIDEO_SUCCESS) {
 		if (ret == OBS_VIDEO_CURRENTLY_ACTIVE) {
@@ -7136,13 +7137,13 @@ void OBSBasic::StartRecording()
 		return;
 	if (disableOutputsRef)
 		return;
-
+	//output path check
 	if (!OutputPathValid()) {
 		OutputPathInvalidMessage();
 		ui->recordButton->setChecked(false);
 		return;
 	}
-
+	//disk space check
 	if (LowDiskSpace()) {
 		DiskSpaceMessage();
 		ui->recordButton->setChecked(false);
@@ -7690,6 +7691,7 @@ void OBSBasic::on_recordButton_clicked()
 			return;
 		}
 
+		//录制
 		StartRecording();
 	}
 }

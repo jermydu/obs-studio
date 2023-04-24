@@ -175,11 +175,13 @@ void dc_capture_capture(struct dc_capture *capture, HWND window)
 
 	hdc_target = GetDC(window);
 
+	//Window screenshot
 	BitBlt(hdc, 0, 0, capture->width, capture->height, hdc_target,
 	       capture->x, capture->y, SRCCOPY);
 
 	ReleaseDC(NULL, hdc_target);
 
+	//redraw cursor
 	if (capture->cursor_captured && !capture->cursor_hidden)
 		draw_cursor(capture, hdc, window);
 

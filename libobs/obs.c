@@ -651,6 +651,7 @@ static int obs_init_video(struct obs_video_info *ovi)
 	errorcode = pthread_create(&video->video_thread, NULL,
 				   obs_graphics_thread_autorelease, obs);
 #else
+	//create video thread
 	errorcode = pthread_create(&video->video_thread, NULL,
 				   obs_graphics_thread, obs);
 #endif

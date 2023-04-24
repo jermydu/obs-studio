@@ -381,8 +381,10 @@ static bool ffmpeg_mux_start(void *data)
 	obs_data_t *settings;
 	const char *path;
 
+	//capture
 	if (!obs_output_can_begin_data_capture(stream->output, 0))
 		return false;
+	//encoders
 	if (!obs_output_initialize_encoders(stream->output, 0))
 		return false;
 
