@@ -2147,6 +2147,7 @@ static int run_program(fstream &logFile, int argc, char *argv[])
 
 	ScopeProfiler prof{run_program_init};
 
+	//high_dpi
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 11, 0)) && \
 	(QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
 	QGuiApplication::setAttribute(opt_disable_high_dpi_scaling
@@ -2896,6 +2897,7 @@ int main(int argc, char *argv[])
 #endif
 
 #ifdef _WIN32
+	//crash
 	obs_init_win32_crash_handler();
 	SetErrorMode(SEM_FAILCRITICALERRORS);
 	load_debug_privilege();
@@ -2909,13 +2911,13 @@ int main(int argc, char *argv[])
 		func();
 	}
 #endif
-
+	//log
 	base_get_log_handler(&def_log_handler, nullptr);
 
 #if defined(USE_XDG) && defined(IS_UNIX)
 	move_to_xdg();
 #endif
-
+	//cmd
 	obs_set_cmdline_args(argc, argv);
 
 	for (int i = 1; i < argc; i++) {
@@ -3043,11 +3045,12 @@ int main(int argc, char *argv[])
 				       "/disable_missing_files_check.txt");
 	}
 #endif
-
+	//setting
 	upgrade_settings();
 
 	fstream logFile;
 
+	//curl
 	curl_global_init(CURL_GLOBAL_ALL);
 	int ret = run_program(logFile, argc, argv);
 
